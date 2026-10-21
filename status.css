@@ -1,0 +1,217 @@
+/*! Statusseite · Fira Sans Condensed © The Mozilla Foundation, Telefonica S.A. (SIL OFL 1.1, fonts/LIZENZEN.txt) */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/fira-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/fira-6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/fira-8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  color-scheme: light;
+  --grund: #eef4fa;
+  --karte: #ffffff;
+  --text: #0f1b2d;
+  --leise: #55606e;
+  --rahmen: #c7d2de;
+  --teal: #0f766e;
+  --gruen: #15803d;
+  --gruen-grund: #def3e5;
+  --gruen-tinte: #166534;
+  --rot: #b91c1c;
+  --rot-grund: #fce5e5;
+  --gelb: #92400e;
+  --gelb-grund: #fef3c7;
+  --grau-punkt: #8494a6;
+  --gc-zeichen-grund: #ffffff;
+  --schwebend: 0 1px 2px rgba(16, 24, 40, .04), 0 4px 12px rgba(16, 24, 40, .08);
+  --klick: 0 1px 2px rgba(15, 27, 45, .08), 0 3px 10px rgba(15, 27, 45, .12);
+  --klick-hover: 0 1px 2px rgba(15, 27, 45, .12), 0 8px 18px rgba(15, 27, 45, .18);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --grund: #09090b;
+    --karte: #18191d;
+    --text: #ffffff;
+    --leise: #c4c7c8;
+    --rahmen: rgba(255, 255, 255, .14);
+    --teal: #2dd4bf;
+    --gruen: #5fd88f;
+    --gruen-grund: rgba(21, 128, 61, .24);
+    --gruen-tinte: #5fd88f;
+    --rot: #f58a8a;
+    --rot-grund: rgba(185, 28, 28, .26);
+    --gelb: #fcd34d;
+    --gelb-grund: rgba(180, 83, 9, .26);
+    --grau-punkt: #6b767a;
+    --gc-zeichen-grund: #18191d;
+    --schwebend: 0 1px 2px rgba(0, 0, 0, .40), inset 0 1px 0 rgba(255, 255, 255, .04);
+    --klick: 0 1px 2px rgba(0, 0, 0, .45), 0 4px 10px rgba(0, 0, 0, .40);
+    --klick-hover: 0 1px 2px rgba(0, 0, 0, .55), 0 8px 18px rgba(0, 0, 0, .50);
+  }
+  .knopf { background: #2e2f35; }
+}
+
+* { box-sizing: border-box; }
+html { background: var(--grund); }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--grund);
+  color: var(--text);
+  font-family: 'Fira Sans Condensed', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.rahmen {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 56px;
+}
+.kopf {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.logo { display: inline-flex; color: var(--teal); }
+.logo svg { height: 30px; width: auto; display: block; }
+.kopf-titel {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--leise);
+  padding-left: 14px;
+  border-left: 1px solid var(--rahmen);
+}
+
+.karte {
+  background: var(--karte);
+  border-radius: 12px;
+  box-shadow: var(--schwebend);
+}
+.lage {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 112px;
+  padding: 24px 26px;
+}
+.punkt {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--grau-punkt);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--grau-punkt) 22%, transparent);
+}
+.lage[data-zustand="ok"] .punkt { background: var(--gruen); box-shadow: 0 0 0 6px var(--gruen-grund); }
+.lage[data-zustand="gestoert"] .punkt { background: var(--rot); box-shadow: 0 0 0 6px var(--rot-grund); }
+.lage[data-zustand="unbekannt"] .punkt { background: var(--gelb); box-shadow: 0 0 0 6px var(--gelb-grund); }
+/* alle Zustände im selben Rasterfeld: die Höhe richtet sich nach dem längsten */
+.lage-text { display: grid; flex: 1 1 auto; min-width: 0; }
+.lage-text > * { grid-area: 1 / 1; }
+.lage-mass { visibility: hidden; }
+.lage h1, .lage .titel {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -.005em;
+}
+.lage[data-zustand="ok"] h1 { color: var(--gruen); }
+.lage[data-zustand="gestoert"] h1 { color: var(--rot); }
+.lage .titel { margin: 0; }
+.lage p.satz, .lage #lage-satz { margin: 4px 0 0; color: var(--leise); }
+
+.zeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 2px 40px;
+}
+.stand { margin: 0; color: var(--leise); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--karte);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--klick);
+}
+.knopf:hover { box-shadow: var(--klick-hover); }
+.knopf:focus-visible, a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+.knopf[aria-busy="true"] { cursor: progress; }
+
+.vorfaelle h2 {
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.liste .leer { padding: 18px 22px; color: var(--leise); }
+.vorfall { padding: 18px 22px; }
+.vorfall-kopf {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vorfall h3 { margin: 0; font-size: 18px; font-weight: 600; }
+.marke {
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.vorfall[data-zustand="offen"] .marke { background: var(--rot-grund); color: var(--rot); }
+.vorfall[data-zustand="behoben"] .marke { background: var(--gruen-grund); color: var(--gruen-tinte); }
+.zeitraum { margin: 4px 0 0; color: var(--leise); font-size: 15px; font-variant-numeric: tabular-nums; }
+.vorfall p.text { margin: 8px 0 0; }
+
+.fuss { margin-top: 48px; color: var(--leise); font-size: 15px; }
+.fuss p { margin: 0 0 16px; max-width: 60ch; }
+.fuss-links { display: flex; gap: 10px; flex-wrap: wrap; }
+
+@media (max-width: 480px) {
+  .rahmen { padding: 24px 16px 40px; }
+  .lage { padding: 20px; gap: 14px; }
+  .lage h1, .lage .titel { font-size: 25px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lage[data-zustand="pruefe"] .punkt { animation: atmen 1.6s ease-in-out infinite; }
+}
+@keyframes atmen { 50% { opacity: .45; } }

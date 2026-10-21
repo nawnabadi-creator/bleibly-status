@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://bleibly.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>Status · bleibly</title>
+<link rel="preload" href="fonts/fira-2.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="status.css">
+<script src="status.js" defer></script>
+</head>
+<body>
+<main class="rahmen">
+  <header class="kopf">
+    <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-89.9 -89.24 420.22 112.28" fill="none" role="img" aria-label="bleibly">
+  <title>bleibly</title>
+  <g transform="translate(-87.9 -74.5) scale(1.188)">
+    <rect width="64" height="64" rx="10" fill="currentColor"/>
+    <g><path fill="color-mix(in srgb, currentColor 22%, var(--gc-zeichen-grund, #fff))" d="M32 8.5 L58.119 34.619 A1.3 1.3 0 0 1 58.5 35.538 L58.5 41.862 A1.3 1.3 0 0 1 56.281 42.781 L32 18.5 Z"/><path fill="color-mix(in srgb, currentColor 22%, var(--gc-zeichen-grund, #fff))" d="M32 26 L48.619 42.619 A1.3 1.3 0 0 1 49 43.538 L49 48.062 A1.3 1.3 0 0 1 46.781 48.981 L32 34.2 Z"/><path fill="var(--gc-zeichen-grund, #fff)" d="M5.5 35.538 A1.3 1.3 0 0 1 5.881 34.619 L32 8.5 L32 18.5 L7.719 42.781 A1.3 1.3 0 0 1 5.5 41.862 Z"/><path fill="var(--gc-zeichen-grund, #fff)" d="M15 43.538 A1.3 1.3 0 0 1 15.381 42.619 L32 26 L32 34.2 L17.219 48.981 A1.3 1.3 0 0 1 15 48.062 Z"/><path fill="#F5C842" d="M34 20.5 L44 20.5 L41.5 28 Z"/><path fill="#F5C842" d="M34 36.2 L42.2 36.2 L40.15 42.35 Z"/></g>
+  </g>
+  <path fill="currentColor" d="M41.41 1.37L41.41 1.37Q35.06 1.37 30.91-1.44Q26.76-4.25 23.73-10.30L23.73-10.30L24.66-10.21L24.66 0L6.10 0L6.10-73.24L25.63-73.24L25.63-42.48L24.51-43.21Q27.69-49.02 31.91-51.56Q36.13-54.10 41.85-54.10L41.85-54.10Q48.68-54.10 53.52-50.85Q58.35-47.61 60.91-41.38Q63.48-35.16 63.48-26.22L63.48-26.22Q63.48-17.38 60.89-11.21Q58.30-5.03 53.37-1.83Q48.44 1.37 41.41 1.37ZM33.94-12.94L33.94-12.94Q38.28-12.94 40.65-16.65Q43.02-20.36 43.02-26.61L43.02-26.61Q43.02-32.86 40.70-36.35Q38.38-39.84 34.03-39.84L34.03-39.84Q31.25-39.84 29.10-38.31Q26.95-36.77 25.76-33.76Q24.56-30.76 24.56-26.42L24.56-26.42Q24.56-19.87 27.22-16.41Q29.88-12.94 33.94-12.94ZM92.23 0L82.61 0Q74.55 0 70.79-3.47Q67.03-6.93 67.03-14.01L67.03-14.01L67.03-73.24L86.56-73.24L86.56-16.41Q86.56-14.75 87.03-14.21Q87.49-13.67 89.01-13.67L89.01-13.67L92.23-13.67L92.23 0ZM121.57 1.37L121.57 1.37Q113.66 1.37 106.94-2.03Q100.23-5.42 96.13-11.67Q92.03-17.92 92.03-26.51L92.03-26.51Q92.03-34.96 96.00-41.14Q99.98-47.31 106.70-50.71Q113.41-54.10 121.66-54.10L121.66-54.10Q126.16-54.10 130.82-52.78Q135.48-51.46 139.44-48.07Q143.39-44.68 145.81-38.53Q148.23-32.37 148.23-22.71L148.23-22.71L104.57-22.71L104.57-32.28L130.70-32.28L129.77-30.08Q129.28-34.03 128.08-36.50Q126.89-38.96 125.11-40.11Q123.32-41.26 121.08-41.26L121.08-41.26Q117.81-41.26 115.85-39.23Q113.90-37.21 113.02-33.84Q112.14-30.47 112.14-26.42L112.14-26.42Q112.14-20.21 114.24-16.33Q116.34-12.45 121.37-12.45L121.37-12.45Q124.30-12.45 126.55-13.99Q128.79-15.53 130.16-19.04L130.16-19.04L147.35-15.19Q145.49-9.08 141.29-5.44Q137.09-1.81 131.84-0.22Q126.60 1.37 121.57 1.37ZM172.05 0L152.52 0L152.52-52.73L172.05-52.73L172.05 0ZM162.28-57.03L162.28-57.03Q156.71-57.03 153.59-60.16Q150.46-63.28 150.46-68.85L150.46-68.85Q150.46-74.41 153.59-77.54Q156.71-80.66 162.28-80.66L162.28-80.66Q167.85-80.66 170.97-77.54Q174.10-74.41 174.10-68.85L174.10-68.85Q174.10-63.28 170.97-60.16Q167.85-57.03 162.28-57.03ZM215.06 1.37L215.06 1.37Q208.71 1.37 204.56-1.44Q200.41-4.25 197.38-10.30L197.38-10.30L198.31-10.21L198.31 0L179.75 0L179.75-73.24L199.29-73.24L199.29-42.48L198.16-43.21Q201.34-49.02 205.56-51.56Q209.78-54.10 215.50-54.10L215.50-54.10Q222.33-54.10 227.17-50.85Q232-47.61 234.56-41.38Q237.13-35.16 237.13-26.22L237.13-26.22Q237.13-17.38 234.54-11.21Q231.95-5.03 227.02-1.83Q222.09 1.37 215.06 1.37ZM207.59-12.94L207.59-12.94Q211.93-12.94 214.30-16.65Q216.67-20.36 216.67-26.61L216.67-26.61Q216.67-32.86 214.35-36.35Q212.03-39.84 207.68-39.84L207.68-39.84Q204.90-39.84 202.75-38.31Q200.60-36.77 199.41-33.76Q198.21-30.76 198.21-26.42L198.21-26.42Q198.21-19.87 200.87-16.41Q203.53-12.94 207.59-12.94ZM265.88 0L256.26 0Q248.20 0 244.44-3.47Q240.68-6.93 240.68-14.01L240.68-14.01L240.68-73.24L260.21-73.24L260.21-16.41Q260.21-14.75 260.68-14.21Q261.14-13.67 262.66-13.67L262.66-13.67L265.88-13.67L265.88 0ZM287.21 19.04L274.66 19.04L274.66 5.37L284.23 5.37Q285.40 5.37 285.94 5.03Q286.48 4.69 286.92 3.61L286.92 3.61L288.72-1.03L287.89 5.47L263.53-52.73L285.40-52.73L296.54-14.84L295.36-14.84L306.45-52.73L328.32-52.73L304.30 8.15Q301.71 14.75 297.51 16.89Q293.31 19.04 287.21 19.04L287.21 19.04Z"/>
+</svg></span>
+    <span class="kopf-titel">Status</span>
+  </header>
+
+  <section class="karte lage" id="lage" data-zustand="pruefe" aria-live="polite">
+    <span class="punkt" aria-hidden="true"></span>
+    <div class="lage-text">
+      <div class="lage-inhalt">
+        <h1 id="lage-titel">Wird geprüft …</h1>
+        <p id="lage-satz">Ihr Browser fragt bleibly gerade direkt.</p>
+      </div>
+      <div class="lage-mass" data-fuer="ok" aria-hidden="true">
+        <p class="titel">Alles in Betrieb</p>
+        <p class="satz">Buchungsseiten und Gastgeberbereich sind erreichbar.</p>
+      </div>
+      <div class="lage-mass" data-fuer="gestoert" aria-hidden="true">
+        <p class="titel">Gestört</p>
+        <p class="satz">Buchungsseiten und Gastgeberbereich sind gerade nicht oder nur eingeschränkt erreichbar. Wir arbeiten daran.</p>
+      </div>
+      <div class="lage-mass" data-fuer="unbekannt" aria-hidden="true">
+        <p class="titel">Prüfung nicht möglich</p>
+        <p class="satz">Ihr Browser hat keine Antwort bekommen. Liegt es an Ihrer Verbindung, versuchen Sie es gleich noch einmal.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="zeile">
+    <p class="stand" id="stand">Noch nicht geprüft</p>
+    <button type="button" class="knopf" id="neu">Jetzt prüfen</button>
+  </div>
+
+  <section class="vorfaelle" aria-labelledby="vorfaelle-titel">
+    <h2 id="vorfaelle-titel">Vorfälle der letzten 90 Tage</h2>
+    <ol class="liste" id="liste">
+      <li class="karte leer" id="leer">Wird geladen …</li>
+    </ol>
+  </section>
+
+  <footer class="fuss">
+    <p>Diese Seite fragt bleibly direkt aus Ihrem Browser, jede Minute neu. Vorfälle trägt eine Wache ein, die außerhalb unseres Rechenzentrums läuft.</p>
+    <nav class="fuss-links" aria-label="Weiter">
+      <a class="knopf" href="https://bleibly.com/">Zu bleibly</a>
+      <a class="knopf" href="https://bleibly.com/impressum.php">Impressum</a>
+      <a class="knopf" href="https://bleibly.com/datenschutz.php">Datenschutz</a>
+    </nav>
+  </footer>
+</main>
+</body>
+</html>
