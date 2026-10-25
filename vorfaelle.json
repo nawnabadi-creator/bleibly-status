@@ -1,4 +1,13 @@
 {
-    "stand": "2026-10-21T19:31:13Z",
-    "vorfaelle": []
+    "stand": "2026-10-25T21:31:50Z",
+    "vorfaelle": [
+        {
+            "id": "20261021-2131",
+            "zustand": "offen",
+            "beginn": "2026-10-21T19:31:33Z",
+            "ende": null,
+            "titel": "Störung",
+            "text": "Buchungsseiten und Gastgeberbereich sind nicht oder nur eingeschränkt erreichbar. Wir arbeiten daran. Buchungen über die Portale laufen weiter und gehen nicht verloren."
+        }
+    ]
 }

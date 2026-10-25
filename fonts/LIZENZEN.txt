@@ -1,10 +1,10 @@
 bleibly – Lizenzen der lokal ausgelieferten Schriften (assets/fonts/)
-Stand 2026-10-14 (Auftrag 061). Die Schriftdateien sind unverändert von
+Stand 2026-10-22 (Buchungsschriften ergaenzt). Die Schriftdateien sind unverändert von
 Google Fonts übernommen (scripts/vendor_assets.php). Beide Lizenzen erlauben
 die Weitergabe nur mit Urheberhinweis und Lizenztext; beides steht hier.
 
 Inter (inter-*.woff2)
-  Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+  Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
   SIL Open Font License, Version 1.1 (Text unten)
 
 Fira Sans Condensed (fira-*.woff2)
@@ -15,6 +15,39 @@ Schibsted Grotesk (schibsted-*.woff2)
   Copyright 2023 The Schibsted Grotesk Project Authors
   (https://github.com/schibsted/schibsted-grotesk)
   SIL Open Font License, Version 1.1 (Text unten)
+
+Buchungsschriften der Gaesteseiten (Auswahl des Gastgebers): Inter (oben)
+und die vier folgenden. Gewählt wurden nur Schriften OHNE Reserved Font
+Name (RFN): eine Untermenge nach Unicode-Bereich ist nach der OFL-FAQ eine
+„Modified Version", und die dürfte einen RFN nicht tragen. Deshalb nicht
+Lora (RFN "Lora") und nicht Playfair Display (RFN "Playfair Display"),
+sondern Gelasio und Bodoni Moda. Geprüft je Schrift an der OFL.txt im
+Google-Fonts-Repo (github.com/google/fonts, ofl/<name>/OFL.txt). Alle vier:
+Quelle Google Fonts (css2-API, beim Bauen ueber scripts/vendor_assets.php
+--nur-buchungsschriften), Lizenz SIL Open Font License, Version 1.1 (Text
+unten, gilt fuer alle vier unveraendert), Aenderungen: keine; nur
+Untermengen nach Unicode-Bereich (latin, latin-ext), wie Google Fonts sie
+selbst schneidet. Variable Schriften, Gewicht 400-700.
+
+Nunito (nunito-latin.woff2, nunito-latin-ext.woff2)
+  Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+  Projekt: https://github.com/googlefonts/nunito
+  Reserved Font Name: keiner
+
+Gelasio (gelasio-latin.woff2, gelasio-latin-ext.woff2)
+  Copyright 2022 The Gelasio Project Authors (https://github.com/SorkinType/Gelasio)
+  Projekt: https://github.com/SorkinType/Gelasio
+  Reserved Font Name: keiner
+
+Bodoni Moda (bodoni-latin.woff2, bodoni-latin-ext.woff2)
+  Copyright 2020 The Bodoni Moda Project Authors (https://github.com/indestructible-type/Bodoni)
+  Projekt: https://github.com/indestructible-type/Bodoni
+  Reserved Font Name: keiner
+
+Manrope (manrope-latin.woff2, manrope-latin-ext.woff2)
+  Copyright 2018 The Manrope Project Authors (https://github.com/googlefonts/manrope)
+  Projekt: https://github.com/googlefonts/manrope
+  Reserved Font Name: keiner
 
 Material Symbols Outlined (material-symbols-*.woff2)
   Copyright 2022 Google LLC
